@@ -42,6 +42,14 @@ public class Algorithms {
                 longest = str.length();
             }
         }
+        while(s.hasNext())
+        {
+            String str = s.next();
+            if(str.length() == longest)
+            {
+                longestTie++;
+            }
+        }
         return longestTie;
     }
 }
